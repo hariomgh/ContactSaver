@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/signupback"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="@color/black"
+        android:layout_marginTop="250dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/purple_200"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfieldbackground"
+            android:textColorHint="@color/purple_200"
+            android:id="@+id/etName"
+
+            android:hint="Enter your Name" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/purple_200"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfieldbackground"
+            android:textColorHint="@color/purple_200"
+            android:id="@+id/etEmail"
+
+            android:hint="Enter your E-mail" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/purple_200"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfieldbackground"
+            android:textColorHint="@color/black"
+            android:id="@+id/etPassword"
+
+            android:hint="Enter password"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/white"
+        app:boxStrokeErrorColor="@color/black"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/purple_200"
+        app:startIconDrawable="@drawable/ic_baseline_perm_identity_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfieldbackground"
+            android:textColorHint="@color/purple_200"
+            android:id="@+id/etUsername"
+
+            android:hint="Enter unique user-name" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignup"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:rotation="-43"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/buttonback"
+        android:shadowColor="@color/purple_200"
+        android:text="Sign-up"
+        android:textColor="@color/purple_500"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/tvSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="If already register, Sign-In" />
+
+</LinearLayout>
